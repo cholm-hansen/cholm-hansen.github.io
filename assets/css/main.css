@@ -3783,3 +3783,41 @@ input, select, textarea {
 			}
 
 		}
+
+
+/* Remove all oval/circular styling for the custom figure */
+.image.rectangle,
+.image.rectangle img {
+    border-radius: 0 !important;
+    overflow: visible !important;
+    width: 100% !important;
+	max-width: 500px !important;
+    height: auto !important;
+    object-fit: contain !important;
+    aspect-ratio: auto !important;
+    clip-path: none !important;
+    mask-image: none !important;
+    -webkit-mask-image: none !important;
+}
+
+/* Caption styling for rectangular figures */
+.image.rectangle figcaption {
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 0.5em;
+    color: #666; /* Optional: muted color */
+}
+
+.back-button {
+    position: absolute;
+    top: 1.5em;
+    left: 1.5em;
+    z-index: 1000;
+}
+
+.back-button .button {
+    font-size: 0.85em;
+    padding: 0.45em 1em;
+    line-height: 1.5em;
+    vertical-align: middle;
+}
